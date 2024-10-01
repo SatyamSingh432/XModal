@@ -95,7 +95,7 @@ const Xmodal = () => {
               value={dob}
             />
             <br />
-            <button type="submit" className="btn">
+            <button type="submit" className="btn submit-button">
               Submit
             </button>
           </form>
