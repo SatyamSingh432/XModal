@@ -52,11 +52,8 @@ const Xmodal = () => {
       </div>
 
       {isOpen && (
-        <div
-          onClick={closeModal}
-          className={`modal ${isOpen ? "show-modal" : ""}`}
-        >
-          <div className="modal-content">
+        <div onClick={closeModal} className="modal show-modal">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <form onSubmit={handlerSubmit} className="form_modal">
               <h2>Fill Details</h2>
               <p className="title">Username:</p>
